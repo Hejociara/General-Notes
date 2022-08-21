@@ -1,0 +1,8 @@
+Git Clone:
+
+1- abrir o git bash na pasta desejada no seu pc
+2- Vá até o projeto que desejas clonar no github
+3- Vá até o botão verde "code"
+4- Copia o SSH ou HTTPS, copia
+5- Com o git bash aberto digite:
+git clone + o ssh ou https
