@@ -3,6 +3,9 @@ int, double, float, char
 
 = símbolo de atribuição
 
+final == constante
+Ex:
+final Int
 :::::::::::
 public static void main (String[]args){
 /* Devemos definir variáveis e constantes
@@ -17,16 +20,16 @@ int raio = 3;
 /*
  * Inferência(deduzir, concluir)
  */
- var a = 4.5;
- var c = "Texto";
- System.out.printlin(c);
+  var a = 4.5;
+  var c = "Texto";
+  System.out.println(c);
 
 var d = "outro texto"
-System.out.printlin(d);
+System.out.println(d);
 
 /*
  * 8 tipos primitivos: 
- * 6 desses tipos, são numéricos
+ * 6 desses tipos são numéricos
  * Byte(1byte), short(2bytes), int(4bytes) e long(8bytes)-representam valores inteiros
  * Eles possuem valores de armazenamento mas, todos são inteiros
  * Além disso, temos os números inteiros de pontos flutuantes:
@@ -38,11 +41,15 @@ System.out.printlin(d);
  * 
  * método: usando notação(ponto)
  */
- String s = "Hello earth world!!!"
- s = s.replace("earth", "earth")
- }
+  String s = "Hello earth world!!!"
+  s = s.replace("earth", "earth")
+  }
 
 :::::::::::::::::::::::::::
+Notação:
+
+.replace(",","."); //substitui qualquer vírgula pelo ponto
+:::::::::::::
 
 String
 
@@ -80,7 +87,7 @@ entrada.close();  // para encerrar esse ciclo utilizar:
 
 Ex:
 
-1. Scanner teclado = new Scanner(system.n);
+1. Scanner teclado = new Scanner(System.in);
 
 2.  
 
@@ -102,16 +109,68 @@ Ex:
     teclado.close();
     ```
 
-precisamos "pegar" o "\n" que o **nextInt()** não lê. Isso pode ser feito colocando um comando **nextLine()** depois do **nextInt()**, de modo que o código abaixo vai funcionar da maneira como queríamos.
+precisamos "pegar" o "\n" que o **nextInt()** não lê. Isso pode ser feito 
+colocando um comando **nextLine()** depois do **nextInt()**, 
+de modo que o código abaixo vai funcionar da maneira como queríamos.
 
 ```
-Scanner teclado = new Scanner(system.n); 
+Scanner teclado = new Scanner(System.in); 
 System.out.println("Qual a sua idade?");
 int idade = teclado.nextInt();
-telcado.nextLine() //lê o "\\n" que o teclado.nextInt() deixa para trás.
+teclado.nextLine() //lê o "\\n" que o teclado.nextInt() deixa para trás.
 System.out.println("Qual o seu nome?");
 string nome = teclado.nextLine();
 System.out.println("Qual o seu sobrenome?");
 string sobrenome = teclado.nextLine(); 
 teclado.close();
 ```
+
+Wrapper - classe que envolve um tipo primitivo
+
+Ex: Integer, Character, Byte, Boolean, Byte... 
+
+Conversão explícita - em casos de que vai haver a perda de dados
+
+Conversão implícita - em casos onde não haverá perda de dados
+
+Ex:
+
+double a = 1;
+
+float b = (float) 1.151516; //explícita cast
+
+BigDecimal - usado para quando há a necessidade de precisão
+
+:::::::::::::::::::::
+Conversão de String para número
+Double.parseDouble //converter para double
+Ex: 
+double salary1 = Double.parseDouble(value1);
+
+::::::::::
+
+.parseDouble - converter para double
+
+.toString - converter para String
+
+::::::::::::::::::::::::::
+Operadores (unários, binários, ternários)
+unários a++ / um operando
+binários 2 + B // um operando, precisa de um número antes e outro depois
+ternários V ? V : V // 3 operandos
+
+Operadores: Aritmético, relacionais, lógicos e atribuição
+*operando pré-fixado: ++a /unário
+*Operando pós fixado: a++ /unário
+*Infixado : 3 + 2 / binário
+
+Módulo é o resto da divisão
+Ex:
+System.out.println(8 % 3); //8 módulo de 3
+
+:::::::::::
+Elevar a potência 
+Math.pow(nome da variável, o número da potência)
+Ex:
+int a = 3 * 4 - 10;
+int b = Math.pow(a,3);
