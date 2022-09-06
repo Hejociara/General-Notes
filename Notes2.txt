@@ -18,11 +18,12 @@ int raio = 3;
 // constantes devem levar letras maiúsculas
 // colocando a palavra final antes de uma variável, torna-a imutável
 /*
+
  * Inferência(deduzir, concluir)
  */
-  var a = 4.5;
-  var c = "Texto";
-  System.out.println(c);
+    var a = 4.5;
+    var c = "Texto";
+    System.out.println(c);
 
 var d = "outro texto"
 System.out.println(d);
@@ -41,9 +42,9 @@ System.out.println(d);
  * 
  * método: usando notação(ponto)
  */
-  String s = "Hello earth world!!!"
-  s = s.replace("earth", "earth")
-  }
+    String s = "Hello earth world!!!"
+    s = s.replace("earth", "earth")
+    }
 
 :::::::::::::::::::::::::::
 Notação:
@@ -174,3 +175,56 @@ Math.pow(nome da variável, o número da potência)
 Ex:
 int a = 3 * 4 - 10;
 int b = Math.pow(a,3);
+
+::::::::::::::::::::::::
+
+Cast - conversão
+
+Ex:
+
+System.out.println(a / (double) b);
+
+System.out.println(a / (float) b);
+
+
+
+Tabela da verdade:
+
+&& (AND)- i comercial
+
+precisa de apenas um falso para constatar que é falso
+
+V && V && V && F -> falso
+
+
+
+OU || (OR)
+
+Precisa ter 2 falsos para que o resultado seja falso
+
+V || F -> V
+
+F || F -> F
+
+F || F || F || F || V  -> V
+
+
+
+^ ou exclusivo (XOR)
+
+V xor V -> F
+
+V xor F -> V
+
+F xor V -> V
+
+F xor F -> F
+
+
+
+NOT V -> F
+
+NOT F -> V
+
+!
+
