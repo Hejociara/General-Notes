@@ -227,4 +227,38 @@ NOT V -> F
 NOT F -> V
 
 !
+------------
+unário
+a ++; // incremento a = a + 1
+a--; // decremento a = a -1
+::::::::::::
+.equals para comparar strings, evitar utilizar == para a comparação nesses casos
+.equals // compara conteúdos
+Ex:
+System.out.println("2".equals(s)); // compara 2 com a variável s
+
+.trim // retira os espaços
+Ex:
+System.out.println("2".equals(s.trim()); // compara 2 com a variável s
+
+.next // retira os espaços em branco
+Ex:
+String s2 = entrada.next();
+----------
+### JRE(Java Runtime Env) vs JDK (Java Development Kit)
+JDK - é utilizado pelo dev // ambiente de desenvolvimento
+JRE - é usado pelo usuário / máquina virtual java // ambiente de execução
+JVM (Java Virtual Machine)
+
+.java vai ser transformado em .class
+aqui estará p ByteCode - não é interpretado pelo computador(windows, linux..)
+uma linguagem universal onde quase todas as VM irão rodar e traduzir
+para a linguagem de máquina
+
+### Java vs Javac
+.java = código fonte
+.class = arquivo
+javac = java compiler /compilador
+
+
 
