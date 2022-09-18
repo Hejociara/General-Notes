@@ -3,7 +3,7 @@ int, double, float, char
 
 = símbolo de atribuição
 
-final == constante
+final "antes da variável" == constante
 Ex:
 final Int
 :::::::::::
@@ -24,9 +24,8 @@ int raio = 3;
     var a = 4.5;
     var c = "Texto";
     System.out.println(c);
-
-var d = "outro texto"
-System.out.println(d);
+    var d = "outro texto"
+    System.out.println(d);
 
 /*
  * 8 tipos primitivos: 
@@ -43,8 +42,9 @@ System.out.println(d);
  * método: usando notação(ponto)
  */
     String s = "Hello earth world!!!"
-    s = s.replace("earth", "earth")
+    s = s.replace("earth", "Earth")
     }
+    (visualização Hello Earth world)
 
 :::::::::::::::::::::::::::
 Notação:
@@ -80,7 +80,7 @@ System.out.printf("Exemplo: %d %d %d %d, 1,2,3,4"); // print formatado
 
 Scanner entrada = new Scanner(System.in); // entrada do sistema, monitorar a entrada
 
-entrada.close();  // para encerrar esse ciclo utilizar:
+entrada.close();  // para encerrar esse ciclo ao utilizar:
 
 ::::::::::::::::::::::::::::::
 
@@ -90,29 +90,27 @@ Ex:
 
 1. Scanner teclado = new Scanner(System.in);
 
-2.  
+2. System.out.println("Qual é a sua idade?");
 
-3. System.out.println("Qual a sua idade?");
+3. int idade = teclado.nextInt(); "The nextInt() method of
+java.util.Scanner class scans the next token of the input as a Int."
 
-4. int idade = teclado.nextInt();
+4. System.out.println("Qual o seu nome?");
 
-5. System.out.println("Qual o seu nome?");
+5. string nome = teclado.nextLine();
 
-6. string nome = teclado.nextLine();
+6. System.out.println("Qual o seu sobrenome?");
 
-7. System.out.println("Qual o seu sobrenome?");
+7. string sobrenome = teclado.nextLine();
 
-8. string sobrenome = teclado.nextLine();
+9. ```
+       teclado.close();
+       ```
 
-9. 
-
-10. ```
-    teclado.close();
-    ```
 
 precisamos "pegar" o "\n" que o **nextInt()** não lê. Isso pode ser feito 
 colocando um comando **nextLine()** depois do **nextInt()**, 
-de modo que o código abaixo vai funcionar da maneira como queríamos.
+de modo que o código abaixo vá funcionar da maneira como queríamos.
 
 ```
 Scanner teclado = new Scanner(System.in); 
@@ -130,9 +128,9 @@ Wrapper - classe que envolve um tipo primitivo
 
 Ex: Integer, Character, Byte, Boolean, Byte... 
 
-Conversão explícita - em casos de que vai haver a perda de dados
+Conversão explícita - em casos qe haverão a perda de dados
 
-Conversão implícita - em casos onde não haverá perda de dados
+Conversão implícita - em casos onde não haverão perdas de dados
 
 Ex:
 
