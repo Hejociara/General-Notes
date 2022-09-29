@@ -1,3 +1,4 @@
+<<<<<<< HEAD:JavaNotes.txt
 ### Variáveis e constantes
 int, double, float, char
 
@@ -264,3 +265,267 @@ for, while, do-while
 
 Try-catch-finally
 
+=======
+Variáveis e constantes
+int, double, float, char
+
+= símbolo de atribuição
+
+final "antes da variável" == constante
+Ex:
+final Int
+:::::::::::
+public static void main (String[]args){
+/* Devemos definir variáveis e constantes
+// Uma variável em java é definida quando escolhemos
+o tipo da variável, depois o nome da variável e 
+depois o valor da variável
+Ex: int(tipo da variável) raio(nome da variável) = (recebe o valor) 3;
+    */
+int raio = 3;
+// constantes devem levar letras maiúsculas
+// colocando a palavra final antes de uma variável, torna-a imutável
+/*
+
+ * Inferência(deduzir, concluir)
+ */
+    var a = 4.5;
+    var c = "Texto";
+    System.out.println(c);
+    var d = "outro texto"
+    System.out.println(d);
+
+/*
+ * 8 tipos primitivos: 
+ * 6 desses tipos são numéricos
+ * Byte(1byte), short(2bytes), int(4bytes) e long(8bytes)-representam valores inteiros
+ * Eles possuem valores de armazenamento mas, todos são inteiros
+ * Além disso, temos os números inteiros de pontos flutuantes:
+ * Float(4 bytes ou 8 bits) e double (8 bytes)
+ * e os outros 2 tipos primitivos são:
+ * char e boolean(false and true)
+ * 
+ * Conversão de tipos:
+ * 
+ * método: usando notação(ponto)
+ */
+    String s = "Hello earth world!!!"
+    s = s.replace("earth", "Earth")
+    }
+    (visualização Hello Earth world)
+
+:::::::::::::::::::::::::::
+Notação:
+
+.replace(",","."); //substitui qualquer vírgula pelo ponto
+:::::::::::::
+
+String
+
+
+
+
+
+**Console**:
+
+System.out.print("Algo"); // Imprime na mesma linha
+
+System.out.println("Algo"); //Imprime e dá espaçamento para uma próxima linha
+
+System.out.printf("format, args"); // print formatado
+
+Ex:
+
+System.out.printf("Exemplo: %d %d %d %d, 1,2,3,4"); // print formatado 
+
+%n, dentro do printf, pode realizar uma quebra de linha
+
+:::::::::::
+
+.out = envia para a tela, saída, transmitir algo(impressora, monitor)
+
+.in = entrada(teclado,mouse, câmera)
+
+Scanner entrada = new Scanner(System.in); // entrada do sistema, monitorar a entrada
+
+entrada.close();  // para encerrar esse ciclo ao utilizar:
+
+::::::::::::::::::::::::::::::
+
+**nextInt()** e **nextDouble()**
+
+Ex:
+
+1. Scanner teclado = new Scanner(System.in);
+
+2. System.out.println("Qual é a sua idade?");
+
+3. int idade = teclado.nextInt(); "The nextInt() method of
+java.util.Scanner class scans the next token of the input as a Int."
+
+4. System.out.println("Qual o seu nome?");
+
+5. string nome = teclado.nextLine();
+
+6. System.out.println("Qual o seu sobrenome?");
+
+7. string sobrenome = teclado.nextLine();
+
+9. ```
+       teclado.close();
+       ```
+
+
+precisamos "pegar" o "\n" que o **nextInt()** não lê. Isso pode ser feito 
+colocando um comando **nextLine()** depois do **nextInt()**, 
+de modo que o código abaixo vá funcionar da maneira como queríamos.
+
+```
+Scanner teclado = new Scanner(System.in); 
+System.out.println("Qual a sua idade?");
+int idade = teclado.nextInt();
+teclado.nextLine() //lê o "\\n" que o teclado.nextInt() deixa para trás.
+System.out.println("Qual o seu nome?");
+string nome = teclado.nextLine();
+System.out.println("Qual o seu sobrenome?");
+string sobrenome = teclado.nextLine(); 
+teclado.close();
+```
+
+Wrapper - classe que envolve um tipo primitivo
+
+Ex: Integer, Character, Byte, Boolean, Byte... 
+
+Conversão explícita - em casos qe haverão a perda de dados
+
+Conversão implícita - em casos onde não haverão perdas de dados
+
+Ex:
+
+double a = 1;
+
+float b = (float) 1.151516; //explícita cast
+
+BigDecimal - usado para quando há a necessidade de precisão
+
+:::::::::::::::::::::
+Conversão de String para número
+Double.parseDouble //converter para double
+Ex: 
+double salary1 = Double.parseDouble(value1);
+
+::::::::::
+
+.parseDouble - converter para double
+
+.toString - converter para String
+
+::::::::::::::::::::::::::
+Operadores (unários, binários, ternários)
+unários a++ / um operando
+binários 2 + B // um operando, precisa de um número antes e outro depois
+ternários V ? V : V // 3 operandos
+
+Operadores: Aritmético, relacionais, lógicos e atribuição
+*operando pré-fixado: ++a /unário
+*Operando pós fixado: a++ /unário
+*Infixado : 3 + 2 / binário
+
+Módulo é o resto da divisão
+Ex:
+System.out.println(8 % 3); //8 módulo de 3
+
+:::::::::::
+Elevar a potência 
+Math.pow(nome da variável, o número da potência)
+Ex:
+int a = 3 * 4 - 10;
+int b = Math.pow(a,3);
+
+::::::::::::::::::::::::
+
+Cast - conversão
+
+Ex:
+
+System.out.println(a / (double) b);
+
+System.out.println(a / (float) b);
+
+
+
+Tabela da verdade:
+
+&& (AND)- i comercial
+
+precisa de apenas um falso para constatar que é falso
+
+V && V && V && F -> falso
+
+
+
+OU || (OR)
+
+Precisa ter 2 falsos para que o resultado seja falso
+
+V || F -> V
+
+F || F -> F
+
+F || F || F || F || V  -> V
+
+
+
+^ ou exclusivo (XOR)
+
+V xor V -> F
+
+V xor F -> V
+
+F xor V -> V
+
+F xor F -> F
+
+
+
+NOT V -> F
+
+NOT F -> V
+
+!
+------------
+unário
+a ++; // incremento a = a + 1
+a--; // decremento a = a -1
+::::::::::::
+.equals para comparar strings, evitar utilizar == para a comparação nesses casos
+.equals // compara conteúdos
+Ex:
+System.out.println("2".equals(s)); // compara 2 com a variável s
+
+.trim // retira os espaços
+Ex:
+System.out.println("2".equals(s.trim()); // compara 2 com a variável s
+
+.next // retira os espaços em branco
+Ex:
+String s2 = entrada.next();
+----------
+### JRE(Java Runtime Env) vs JDK (Java Development Kit)
+JDK - é utilizado pelo dev // ambiente de desenvolvimento
+JRE - é usado pelo usuário / máquina virtual java // ambiente de execução
+JVM (Java Virtual Machine)
+
+.java vai ser transformado em .class
+aqui estará p ByteCode - não é interpretado pelo computador(windows, linux..)
+uma linguagem universal onde quase todas as VM irão rodar e traduzir
+para a linguagem de máquina
+
+### Java vs Javac
+.java = código fonte
+.class = arquivo
+javac = java compiler /compilador
+
+
+
+>>>>>>> cb1bb22274a82934cac5c9c9f3bc7879c74223e7:Notes2.txt
