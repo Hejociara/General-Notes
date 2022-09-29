@@ -1,0 +1,266 @@
+### Variáveis e constantes
+int, double, float, char
+
+= símbolo de atribuição
+
+final == constante
+Ex:
+final Int
+
+_____
+
+System.out.println("Escrever qualquer texto"); = imprima uma linha fora do sistema
+
+concatenar -juntar as partes :
+
+Ex: System.out.println("gato = " + gato);
+
+__________
+
+public static void main (String[]args){
+/* Devemos definir variáveis e constantes
+// Uma variável em java é definida quando escolhemos
+o tipo da variável, depois o nome da variável e 
+depois o valor da variável
+Ex: int(tipo da variável) raio(nome da variável) = (recebe o valor) 3;
+    */
+int raio = 3;
+// constantes devem levar letras maiúsculas
+// colocando a palavra final antes de uma variável, torna-a imutável
+/*
+
+ * Inferência(deduzir, concluir)
+ */
+    var a = 4.5;
+    var c = "Texto";
+    System.out.println(c);
+
+var d = "outro texto"
+System.out.println(d);
+
+/*
+ * 8 tipos primitivos: 
+ * 6 desses tipos são numéricos
+ * Byte(1byte), short(2bytes), int(4bytes) e long(8bytes)-representam valores inteiros
+ * Eles possuem valores de armazenamento mas, todos são inteiros
+ * Além disso, temos os números inteiros de pontos flutuantes:
+ * Float(4 bytes ou 8 bits) e double (8 bytes)
+ * e os outros 2 tipos primitivos são:
+ * char e boolean(false and true)
+ * 
+ * Conversão de tipos:
+ * 
+ * método: usando notação(ponto)
+ */
+    String s = "Hello earth world!!!"
+    s = s.replace("earth", "earth")
+    }
+
+:::::::::::::::::::::::::::
+Notação:
+
+.replace(",","."); //substitui qualquer vírgula pelo ponto
+:::::::::::::
+
+String
+
+
+
+
+
+**Console**:
+
+System.out.print("Algo"); // Imprime na mesma linha
+
+System.out.println("Algo"); //Imprime e dá espaçamento para uma próxima linha
+
+System.out.printf("format, args"); // print formatado
+
+Ex:
+
+System.out.printf("Exemplo: %d %d %d %d, 1,2,3,4"); // print formatado 
+
+%n, dentro do printf, pode realizar uma quebra de linha
+
+:::::::::::
+
+.out = envia para a tela, saída, transmitir algo(impressora, monitor)
+
+.in = entrada(teclado,mouse, câmera)
+
+Scanner entrada = new Scanner(System.in); // entrada do sistema, monitorar a entrada
+
+entrada.close();  // para encerrar esse ciclo utilizar:
+
+::::::::::::::::::::::::::::::
+
+**nextInt()** e **nextDouble()**
+
+Ex:
+
+1. Scanner teclado = new Scanner(System.in);
+
+2.  
+
+3. System.out.println("Qual a sua idade?");
+
+4. int idade = teclado.nextInt();
+
+5. System.out.println("Qual o seu nome?");
+
+6. string nome = teclado.nextLine();
+
+7. System.out.println("Qual o seu sobrenome?");
+
+8. string sobrenome = teclado.nextLine();
+
+9. 
+
+10. ```
+    teclado.close();
+    ```
+
+precisamos "pegar" o "\n" que o **nextInt()** não lê. Isso pode ser feito 
+colocando um comando **nextLine()** depois do **nextInt()**, 
+de modo que o código abaixo vai funcionar da maneira como queríamos.
+
+```
+Scanner teclado = new Scanner(System.in); 
+System.out.println("Qual a sua idade?");
+int idade = teclado.nextInt();
+teclado.nextLine() //lê o "\\n" que o teclado.nextInt() deixa para trás.
+System.out.println("Qual o seu nome?");
+string nome = teclado.nextLine();
+System.out.println("Qual o seu sobrenome?");
+string sobrenome = teclado.nextLine(); 
+teclado.close();
+```
+
+Wrapper - classe que envolve um tipo primitivo
+
+Ex: Integer, Character, Byte, Boolean, Byte... 
+
+Conversão explícita - em casos de que vai haver a perda de dados
+
+Conversão implícita - em casos onde não haverá perda de dados
+
+Ex:
+
+double a = 1;
+
+float b = (float) 1.151516; //explícita cast
+
+BigDecimal - usado para quando há a necessidade de precisão
+
+:::::::::::::::::::::
+Conversão de String para número
+Double.parseDouble //converter para double
+Ex: 
+double salary1 = Double.parseDouble(value1);
+
+::::::::::
+
+.parseDouble - converter para double
+
+.toString - converter para String
+
+::::::::::::::::::::::::::
+Operadores (unários, binários, ternários)
+unários a++ / um operando
+binários 2 + B // um operando, precisa de um número antes e outro depois
+ternários V ? V : V // 3 operandos
+
+Operadores: Aritmético, relacionais, lógicos e atribuição
+*operando pré-fixado: ++a /unário
+*Operando pós fixado: a++ /unário
+*Infixado : 3 + 2 / binário
+
+Módulo é o resto da divisão
+Ex:
+System.out.println(8 % 3); //8 módulo de 3
+
+:::::::::::
+Elevar a potência 
+Math.pow(nome da variável, o número da potência)
+Ex:
+int a = 3 * 4 - 10;
+int b = Math.pow(a,3);
+
+::::::::::::::::::::::::
+
+Cast - conversão
+
+Ex:
+
+System.out.println(a / (double) b);
+
+System.out.println(a / (float) b);
+
+
+
+Tabela da verdade:
+
+&& (AND)- i comercial
+
+precisa de apenas um falso para constatar que é falso
+
+V && V && V && F -> falso
+
+
+
+OU || (OR)
+
+Precisa ter 2 falsos para que o resultado seja falso
+
+V || F -> V
+
+F || F -> F
+
+F || F || F || F || V  -> V
+
+
+
+^ ou exclusivo (XOR)
+
+V xor V -> F
+
+V xor F -> V
+
+F xor V -> V
+
+F xor F -> F
+
+
+
+NOT V -> F
+
+NOT F -> V
+
+___________________
+
+## Atribuição
+
+```
+c += b; // c = c + b;
+c -= a; // c = c - a;
+c *= b; // c = c * b;
+c /= a; // c = c / a;
+c %= 2; // c = c % 2; se der 0 o número é par e se der 1, é impar 
+
+c++; // c = c + 1;
+```
+
+## Estruturas
+
+### Estruturas condicionais: 
+
+if-else, switch-case
+
+### Estruturas de repetição:
+
+for, while, do-while
+
+### Estruturas de exceções:
+
+Try-catch-finally
+

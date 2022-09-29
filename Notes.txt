@@ -1,7 +1,0 @@
-System.out.println("Escrever qualquer texto"); = imprima uma linha fora do sistema
-
-concatenar -juntar as partes :
-
-Ex: System.out.println("gato = " + gato);
-
-Variáveis e constantes
