@@ -20,13 +20,13 @@ __________
 public static void main (String[]args){
 /* Devemos definir variáveis e constantes
 // Uma variável em java é definida quando escolhemos
-o tipo da variável, depois o nome da variável e 
-depois o valor da variável
+o tipo da variável, depois o nome da variável e em seguida o valor da variável
 Ex: int(tipo da variável) raio(nome da variável) = (recebe o valor) 3;
-    */
+*/
 int raio = 3;
 // constantes devem levar letras maiúsculas
 // colocando a palavra final antes de uma variável, torna-a imutável
+EX: final CONSTANTE = 3;
 /*
 
  * Inferência(deduzir, concluir)
@@ -35,8 +35,8 @@ int raio = 3;
     var c = "Texto";
     System.out.println(c);
 
-var d = "outro texto"
-System.out.println(d);
+    var d = "outro texto"
+    System.out.println(d);
 
 /*
  * 8 tipos primitivos: 
@@ -45,7 +45,7 @@ System.out.println(d);
 
  * Byte(1byte), short(2bytes), int(4bytes) e long(8bytes)-representam valores inteiros
 
- * Eles possuem valores de armazenamento mas, todos são inteiros
+ * Eles possuem valores diferentes de armazenamento mas, todos são inteiros
 
  * Além disso, temos os números inteiros de pontos flutuantes:
 
@@ -90,13 +90,13 @@ System.out.printf("Exemplo: %d %d %d %d, 1,2,3,4"); // print formatado
 
 :::::::::::
 
-.out = envia para a tela, saída, transmitir algo(impressora, monitor)
+.out = envia para a tela, saída, transmite algo(impressora, monitor,etc)
 
-.in = entrada(teclado,mouse, câmera)
+.in = entrada(teclado,mouse, câmera, etc)
 
 Scanner entrada = new Scanner(System.in); // entrada do sistema, monitorar a entrada
 
-entrada.close();  // para encerrar esse ciclo utilizar:
+entrada.close();  // para encerrar esse ciclo
 
 ::::::::::::::::::::::::::::::
 
@@ -106,7 +106,7 @@ Ex:
 
 1. Scanner teclado = new Scanner(System.in);
 
-2.  
+ 
 
 3. System.out.println("Qual a sua idade?");
 
@@ -233,7 +233,7 @@ JRE - é usado pelo usuário / máquina virtual java // ambiente de execução
 JVM (Java Virtual Machine)
 
 .java vai ser transformado em .class
-aqui estará p ByteCode - não é interpretado pelo computador(windows, linux..)
+aqui estará o ByteCode - não é interpretado pelo computador(windows, linux..)
 uma linguagem universal onde quase todas as VM irão rodar e traduzir
 para a linguagem de máquina
 
@@ -311,6 +311,15 @@ c++; // c = c + 1;
 
 if-else, switch-case
 
+Ex: If 
+
+```
+if (media <= 10 && media >= 7.0){
+    System.out.println("Ha sido aprobado!!!");
+    System.out.println("Bien hecho!!!");
+}
+```
+
 ### Estruturas de repetição:
 
 for, while, do-while
@@ -319,3 +328,7 @@ for, while, do-while
 
 Try-catch-finally
 
+___________________________________________
+if(boolean)
+while(boolean)
+for(;boolean;)
