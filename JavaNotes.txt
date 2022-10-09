@@ -324,7 +324,13 @@ if (media <= 10 && media >= 7.0){
 
 for, while, do-while
 
-For (estrutura adequada para quantidade determinada)
+For (estrutura adequada para quantidade determinada de repetições, ou seja,
+quantidades pré-definidas)
+declaração da variável; expressão que vai dizer se é true or false
+e se vai continuar repetindo ou não; manipução da variável para que o Laço
+pare de executar em um determinado momento.
+Ex:
+for 
 
 ### Estruturas de exceções:
 
@@ -334,3 +340,20 @@ ___________________________________________
 if(boolean)
 while(boolean)
 for(;boolean;)
+Ex:
+int i = 0;
+for(; i < 10; i++){
+        System.out.println(i);
+}
+
+Laço de repetição infinito:
+for(;true;){
+    System.out.println("Fin!!!");
+}
+Ex2:
+for(;;){
+    System.out.println("Fin!!!");
+}
+__________
+
+
