@@ -305,7 +305,9 @@ c %= 2; // c = c % 2; se der 0 o número é par e se der 1, é impar
 c++; // c = c + 1;
 ```
 
-## Estruturas
+## Estruturas de controle
+
+Não utilizar ; em estruturas de controle
 
 ### Estruturas condicionais: 
 
@@ -319,6 +321,14 @@ if (media <= 10 && media >= 7.0){
     System.out.println("Bien hecho!!!");
 }
 ```
+
+if-else
+
+if(condição)
+
+else {
+
+}
 
 ### Estruturas de repetição:
 
@@ -355,5 +365,4 @@ for(;;){
     System.out.println("Fin!!!");
 }
 __________
-
 
