@@ -62,7 +62,7 @@ EX: final CONSTANTE = 3;
  * método: usando notação(ponto)
  */
     String s = "Hello earth world!!!"
-    s = s.replace("earth", "earth")
+    s = s.replace("earth", "Earth")
     }
 
 :::::::::::::::::::::::::::
@@ -241,6 +241,7 @@ para a linguagem de máquina
 .java = código fonte
 .class = arquivo
 javac = java compiler /compilador
+
 _____________
 
 Cast - conversão
@@ -330,6 +331,22 @@ else {
 
 }
 
+
+
+if-else-if
+
+if(nota > 10 || nota <0)
+
+sout("blbla");
+
+else {
+
+if (nota >=6)
+
+sout("blablabla")
+
+}
+
 ### Estruturas de repetição:
 
 for, while, do-while
@@ -365,4 +382,28 @@ for(;;){
     System.out.println("Fin!!!");
 }
 __________
+while - enquanto uma determinada expressão for verdadeira vai executar o bloco 
+ou sentença 
+while - repetição
 
+EX: 
+int contador =1 ;
+while(contador <= 10){
+    sout("Fighting");
+    contador++;
+}
+EX2: 
+int contador =1 ;
+while(contador <= 10){
+    sout("Fighting");
+    contador += 2;
+}
+
+for é a melhor maneira de utilizar a quantidade determinada de repetições
+Ex: 
+for (a(inicialização); b(expressão); c(incremento)){
+}
+
+EX2: for(int contador = 0; contador <= 20) ; contador +=2){//quantidade determinada de repetções
+soutf("i = %d\n",contador);
+}
