@@ -407,3 +407,30 @@ for (a(inicialização); b(expressão); c(incremento)){
 EX2: for(int contador = 0; contador <= 20) ; contador +=2){//quantidade determinada de repetções
 soutf("i = %d\n",contador);
 }
+
+EX3:
+for(int contador = 0; contador < 20) ; contador++){
+    for(int contador2 = 0; contador <20 ; contador++)
+    soutf("[%d %d], contador, contador2);
+    }
+
+
+______________________________
+
+Do-while
+
+do{
+
+}
+while(false);
+___________________
+switch
+String gato = "branco"
+switch(gato.toLowerCase()){
+    case "branco":
+    sout("")
+    break;
+
+    default:
+    sout
+}
