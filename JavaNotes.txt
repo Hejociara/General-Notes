@@ -434,3 +434,17 @@ switch(gato.toLowerCase()){
     default:
     sout
 }
+
+______________________________
+Classes X Objeto
+Classe sempre começa com letra maiúscula
+
+EX:
+class Nome{
+
+}
+A classe tem um corpo que dentro dele possuem(membros):
+Atributos -> dados(int, boolean, date, String, Produto...)
+Comportamentos -> métodos ()
+
+Uma classe também define um tipo(estrutura de dados)
