@@ -453,3 +453,8 @@ A partir das classses criamos objetos, a classe define o tipo e s objetos
 representam os dados
 Objeto é a mesma coisa que uma instância
 Instanciar == Instanciar 10 objetos, criar 10 objetos do tipo produto
+
+através de uma notação ponto consegue-se acessar os  de um objeto ou classe
+EX: objeto.membro
+
+a palavra reservada new chama o construtor
